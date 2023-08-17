@@ -6,6 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-100"
 spec:
+  project: default
   source:
     repoURL: https://github.com/marcolam-sandboxvr/argocd-test.git
     targetRevision: main
@@ -20,3 +21,4 @@ spec:
       - PruneLast=true
       - CreateNamespace=true
       - ApplyOutOfSyncOnly=true
+      - SkipDryRunOnMissingResource=true
