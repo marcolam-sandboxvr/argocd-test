@@ -1,0 +1,4 @@
+resources:
+  - argocd-cluster.yaml
+  - external-secrets.yaml
+  - secretstore.yaml
